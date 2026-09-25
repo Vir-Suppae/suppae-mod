@@ -1,0 +1,9 @@
+name: "suppae-mod"
+displayName: "[navy]Suppae [yellow]Mod"
+author: "Vir-Suppae"
+description:
+	'''
+	This mods adds random stuff
+	'''
+minGameVersion: "160.5"
+hidden: false
