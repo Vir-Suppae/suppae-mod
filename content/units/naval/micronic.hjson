@@ -2,5 +2,8 @@ type: naval
 name: micronic
 description: offshore mining
 mineSpeed: 2
-mineTier: 0
-mineItems: [lead]
+/* mineTier: 0
+mineItems: [lead] */
+weapons: [
+	MineWeapon
+]
