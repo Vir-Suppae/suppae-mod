@@ -5,5 +5,7 @@ mineSpeed: 2
 /* mineTier: 0
 mineItems: [lead] */
 weapons: [
-	MineWeapon
+	{
+		type: MineWeapon
+	}
 ]
