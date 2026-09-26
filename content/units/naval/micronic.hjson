@@ -4,7 +4,7 @@ description: offshore mining
 commands: [
 	move
 	mine
-	load
+	loadBlocks
 ]
 // defaultCommand: mine
 mineSpeed: 2
