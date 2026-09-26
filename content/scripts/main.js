@@ -1,3 +1,4 @@
-reconstructor.upgrades.add(
-    [UnitTypes.poly, UnitTypes.toxopid]
+Blocks.additiveReconstructor.upgrades.addUpgrade(
+    UnitTypes.poly,
+    UnitTypes.toxopid
 );
