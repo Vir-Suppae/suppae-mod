@@ -1,12 +1,7 @@
 type: naval
 name: micronic
 description: offshore mining
+defaultCommand: mineCommand
 mineSpeed: 2
 mineTier: 1
-/* mineItems: [lead] */
-weapons: [
-	{
-		type: MineWeapon
-		aiControllable: true
-	}
-]
+mineItems: [lead]
