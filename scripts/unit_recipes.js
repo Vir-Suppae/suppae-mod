@@ -1,4 +1,4 @@
-Blocks.navalfactory.plans.add(
+Blocks.navalFactory.plans.add(
   new UnitFactory.UnitPlan(
     UnitTypes.micronic,
     60,
