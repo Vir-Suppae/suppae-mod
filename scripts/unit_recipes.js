@@ -1,6 +1,6 @@
 Blocks.navalFactory.plans.add(
   new UnitFactory.UnitPlan(
-    UnitTypes.micronic,
+    UnitTypes["suppae-mod-micronic"],
     60,
     ItemStack.with(
       Items.silicon, 25,
