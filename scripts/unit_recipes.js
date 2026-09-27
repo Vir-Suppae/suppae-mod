@@ -3,7 +3,7 @@ Blocks.navalfactory.plans.add(
     UnitTypes.micronic,
     60,
     ItemStack.with(
-      Items.silicon, 25
+      Items.silicon, 25,
       Items.lead, 15
     )
   )
