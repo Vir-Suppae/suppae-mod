@@ -4,6 +4,9 @@ author: "Vir-Suppae"
 description:
 	'''
 	This mod adds random stuff
+	[red]WARNING: not intended for human consumption[]
+	[#ff440022]please do not the crawler
 	'''
+version: "0.0.1"
 minGameVersion: "160.5"
 hidden: false

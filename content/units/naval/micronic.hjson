@@ -4,7 +4,6 @@ description: offshore mining
 commands: [
 	move
 	mine
-	loadBlocks
 ]
 mineSpeed: 2
 mineTier: 1
