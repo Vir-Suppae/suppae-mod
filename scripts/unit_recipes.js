@@ -1,4 +1,4 @@
-Events.on(ContentInitEvent, event => {
+Events.on(ModContentLoadEvent, event => {
   let micronic = Vars.content.getByName(ContentType.unit, "suppae-mod-micronic")
   print(micronic)
   Blocks.navalFactory.plans.add(
