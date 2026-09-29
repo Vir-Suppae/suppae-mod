@@ -4,6 +4,9 @@ description: aquatic utility
 commands: [
 	move
 	mine
+	repair
+	rebuild
+	assist
 ]
 mineSpeed: 2
 mineTier: 1
