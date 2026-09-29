@@ -9,6 +9,7 @@ requirements: [
 size: 2
 craftTime: 600
 hasItems: true
+itemCapacity: 40
 consumes: {
 items: [
 	lead/20
