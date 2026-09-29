@@ -9,7 +9,9 @@ requirements: [
 size: 2
 craftTime: 600
 hasItems: true
-consumes: [
+consumes: {
+items: [
 	lead/20
 ]
+}
 outputItem: coal/1
