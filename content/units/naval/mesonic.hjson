@@ -1,0 +1,21 @@
+type: naval
+name: mesonic
+description: aquatic utility
+commands: [
+	move
+	mine
+]
+mineSpeed: 2
+mineTier: 1
+mineItems: [lead]
+hitSize: 10
+requirements: {
+	block: additive-reconstructor
+	previous: suppae-mod-micronic
+}
+research: {
+	parent: suppae-mod-micronic
+	objectives: [
+		additive-reconstructor
+	]
+}
