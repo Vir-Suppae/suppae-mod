@@ -8,7 +8,7 @@ commands: [
 mineSpeed: 2
 mineTier: 1
 mineItems: [lead]
-hitSize: 8
+hitSize: 6
 requirements: [
 	silicon/25
 	lead/15
