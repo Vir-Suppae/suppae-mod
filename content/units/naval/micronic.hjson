@@ -10,11 +10,11 @@ mineTier: 1
 mineItems: [lead]
 hitSize: 6
 requirements: {
-	block: navalFactory
+	block: naval-factory
 	time: 1800
 	requirements: [
 		silicon/25
 		lead/15
 	]
 }
-research: navalFactory
+research: naval-factory
