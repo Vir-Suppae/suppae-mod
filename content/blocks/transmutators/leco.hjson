@@ -1,4 +1,4 @@
-type: crafter
+type: genericCrafter
 name: leco
 description: turns lead into coal
 requirements: [
