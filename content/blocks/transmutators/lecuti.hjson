@@ -1,0 +1,21 @@
+type: genericCrafter
+name: lecuti
+description: turns lead and copper into titanium
+requirements: [
+	lead/100
+	scrap/250
+	copper/75
+]
+size: 2
+category: crafting
+craftTime: 450
+hasItems: true
+itemCapacity: 80
+consumes: {
+	items: [
+		lead/30
+		copper/40
+	]
+	power: 300
+}
+outputItem: titanium/1
