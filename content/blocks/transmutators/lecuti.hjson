@@ -16,6 +16,6 @@ consumes: {
 		lead/30
 		copper/40
 	]
-	power: 300
+	power: 5
 }
 outputItem: titanium/1
