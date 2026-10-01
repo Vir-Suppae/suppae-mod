@@ -3,6 +3,7 @@ name: mesonic
 description: aquatic utility
 commands: [
 	move
+	enterPayload
 	mine
 	repair
 	rebuild
