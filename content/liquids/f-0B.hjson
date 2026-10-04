@@ -1,0 +1,8 @@
+type: fluid
+name: f-0b
+description: a nearly undocumented liquid
+color: 8a628a
+temperature: 1.1
+flammability: 0.75
+explosiveness: 0.75
+viscosity: 0.25
