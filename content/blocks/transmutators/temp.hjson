@@ -1,0 +1,19 @@
+type: genericCrafter
+name: leco
+description: turns lead into coal
+requirements: [
+	lead/100
+	scrap/250
+	copper/75
+]
+size: 2
+category: crafting
+craftTime: 300
+hasItems: true
+itemCapacity: 40
+consumes: {
+items: [
+	lead/20
+]
+}
+outputItem: coal/1
