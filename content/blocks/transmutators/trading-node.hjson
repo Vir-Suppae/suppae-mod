@@ -10,5 +10,5 @@ size: 2
 category: crafting
 craftTime: 450
 hasItems: true
-hasLiquid: true
+hasLiquids: true
 itemCapacity: 80
