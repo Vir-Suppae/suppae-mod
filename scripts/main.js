@@ -19,55 +19,48 @@ const acceptedItems = [
     Items.thorium
 ];
 
-const node = extend(GenericCrafter, "trading-node", {
-    size: 2,
-    health: 300,
+const node = Vars.content.getByName(
+    ContentType.block,
+    "suppae-mod-trading-node"
+);
 
-    hasItems: true,
-    hasLiquids: true,
-    outputsLiquid: true,
-    hasPower: false,
+node.buildType = () => extend(GenericCrafter.GenericCrafterBuild, node, {
+    updateTile() {
+        // Accumulate production time.
+        this.progress = Math.min(
+            this.progress + this.delta(),
+            60
+        );
 
-    itemCapacity: 10,
-    liquidCapacity: 30,
+        // Find an available item.
+        var selected = null;
 
-    buildType: () => extend(GenericCrafter.GenericCrafterBuild, node, {
-        updateTile() {
-            // Accumulate production time.
-            this.progress = Math.min(
-                this.progress + this.delta(),
-                60
-            );
+        for (var i = 0; i < acceptedItems.length; i++) {
+            var item = acceptedItems[i];
 
-            // Find an available item.
-            var selected = null;
-
-            for (var i = 0; i < acceptedItems.length; i++) {
-                var item = acceptedItems[i];
-
-                if (this.items.get(item) > 0) {
-                    selected = item;
-                    break;
-                }
+            if (this.items.get(item) > 0) {
+                selected = item;
+                break;
             }
-
-            if (selected != null && this.progress >= 60) {
-                var amount = rates[selected.id];
-
-                if (this.liquids.get(f0c) + amount <= node.liquidCapacity) {
-                    this.items.remove(selected, 1);
-                    this.liquids.add(f0c, amount);
-
-                    this.progress = 0;
-                }
-            }
-
-            this.dumpLiquid(f0c);
-        },
-
-        acceptItem(source, item) {
-            return rates[item.id] !== undefined &&
-                this.items.get(item) < node.itemCapacity;
         }
-    })
-});
+
+        if (selected != null && this.progress >= 60) {
+            var amount = rates[selected.id];
+
+            if (this.liquids.get(f0c) + amount <= this.liquidCapacity) {
+                this.items.remove(selected, 1);
+                this.liquids.add(f0c, amount);
+
+                this.progress = 0;
+            }
+        }
+
+        this.dumpLiquid(f0c);
+    },
+
+    acceptItem(source, item) {
+        return rates[item.id] !== undefined &&
+            this.items.get(item) < this.itemCapacity;
+    }
+})
+
