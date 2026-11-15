@@ -61,7 +61,7 @@ node.buildType = () => extend(GenericCrafter.GenericCrafterBuild, node, {
 
     acceptItem(source, item) {
         return rates[item.id] !== undefined &&
-            this.items.get(item) < this.itemCapacity;
+            this.items.get(item) < node.itemCapacity;
     }
 })
 })
