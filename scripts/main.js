@@ -1,7 +1,7 @@
 Events.on(ContentInitEvent, () => {
 const f0c = Vars.content.getByName(
     ContentType.liquid,
-    "suppae-mod-f-0C"
+    "suppae-mod-f-0c"
 );
 
 const rates = {};
