@@ -1,3 +1,4 @@
+Events.on(ContentInitEvent, () => {
 const f0c = Vars.content.getByName(
     ContentType.liquid,
     "suppae-mod-f-0C"
@@ -63,4 +64,4 @@ node.buildType = () => extend(GenericCrafter.GenericCrafterBuild, node, {
             this.items.get(item) < this.itemCapacity;
     }
 })
-
+})
