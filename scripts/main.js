@@ -48,7 +48,7 @@ node.buildType = () => extend(GenericCrafter.GenericCrafterBuild, node, {
         if (selected != null && this.progress >= 60) {
             var amount = rates[selected.id];
 
-            if (this.liquids.get(f0c) + amount <= this.liquidCapacity) {
+            if (this.liquids.get(f0c) + amount <= node.liquidCapacity) {
                 this.items.remove(selected, 1);
                 this.liquids.add(f0c, amount);
 

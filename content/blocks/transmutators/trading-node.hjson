@@ -12,3 +12,4 @@ craftTime: 450
 hasItems: true
 hasLiquids: true
 itemCapacity: 80
+liquidCapacity: 100
