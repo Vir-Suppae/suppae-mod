@@ -2,13 +2,10 @@ type: genericCrafter
 name: trading node
 description: interacts with an interdimensional trading network through unknown means
 requirements: [
-	lead/100
-	scrap/250
-	copper/75
+	lead/350
 ]
 size: 2
 category: crafting
-craftTime: 450
 hasItems: true
 hasLiquids: true
 itemCapacity: 80
